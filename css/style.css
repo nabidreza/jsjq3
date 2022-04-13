@@ -1,0 +1,15 @@
+.ques{
+	cursor: pointer;
+}
+.ans{
+	display: none;
+}
+p{
+	margin-top: 5px;
+}
+.selected{
+	color: red;
+}
+.highlited{
+	border: 1px solid yellow;
+}
