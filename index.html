@@ -12,16 +12,21 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 
-    <title>jspractice</title>
+    <title>jquery practice</title>
   </head>
   <body>
-
+    
+    <h1 class="display-3 text-center text-success">jquery practice</h1>
+    <br><br>
   	<div class="container">
-  		    <h1>click to have fun</h1>
+          <h2 class="h1 text-center text-primary">Text change(js)/Alert/</h2>
+  		    <h2>click to have fun</h2>
 
   		    <button type="button" class="btn button btn-primary" onclick="textChange()">click here</button>
           
   		    <h3 id="h2">Lorem ipsum dolor sit amet.</h3>
+          <br><br><hr>
+          <h2 class="h1 text-primary text-center">Hide/Show/toggle/fadeout/fadein/fadetoggle/fadeto</h2>
           <button type="button" class="btn btn-primary hide">hide</button>
           <button type="button" class="btn btn-secondary show">show</button>
           <button type="button" class="btn btn-secondary toggle">toggle</button>
@@ -32,15 +37,20 @@
           <h4>Lorem ipsum dolor sit, amet.</h4>
 
   	</div>
+    <br><br><hr>
     <div class="container">
+      <h2 class="h1 text-center text-primary">slidedown/slideup/slidetoggle</h2>
       <div class="ques bg-info p-2 text-white">WHAT IS JAVASCRIPT</div>
       <div class="ans bg-dark p-2 text-white">Javascript is lightweight functional object oriented webpage scripting language......Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatem corrupti nemo corporis assumenda neque, odio nihil esse, ratione quos </div>
     </div>
 
-
+    <br><br><hr>
 
     <div class="container">
      <!-- api documantation -->
+     <h2 class="h1 text-danger text-center">api documantation</h2>
+     <!-- add addback -->
+     <h2 class="h1 text-primary text-center">add.()/addback.()</h2>
             <ul>
               <li>jq: $('li').add('p').css("background-color","skyblue");</li>
               <li>good</li>
@@ -49,19 +59,68 @@
             <p>very good</p>
             <div class="add">
               <ul><li>add:   $('.add').css("background-color","black").add('.p1').css("color","blue");</li>
-              
+    
                 <li class="item2">addback :  $('li.item2').nextAll().addBack().css("border","1px solid blue");  [li.item2]</li>
                 <li>code</li>
                 <li>code</li>
               </ul>
             </div>
             <p class="p1">Lorem ipsum, dolor sit.</p>
+    </div>  
+    <br><hr>      
+    <!-- addclass -->
+    
+    <div class="container">
+    <h2 class="h1 text-primary text-center">addclass.()/after.()</h2>
             <p class="p2">Lorem ...... after:   $('.p2').after("<b>greeaaaattt!!!</b>");
             $('.p2').after(document.createTextNode("hey"));</p>
             <p class="p2">[p2 last] addclass:   $('.p2').last().addClass("selected highlited");</p>
 
     </div>
+    <br><hr>
+    <!-- stop -->
+    <div class="container">
+      <h2 class="h1 text-primary text-center">.stop()-slide stop</h2>
+      <button class="slide btn btn-primary" type="button">slide</button>
+      <button class="stop btn btn-secondary" type="button">stop</button>
 
+      <div class="slide-"></div>
+    </div>
+    <br><hr>
+    <!-- chaining -->
+    <div class="container">
+      <h2 class="h1 text-primary text-center">chaining</h2>
+      <button class="chaining btn btn-primary" type="button">click</button>
+     
+      <div class="slide-chain"></div>
+    </div>
+    <br><hr>
+    <!-- append -->
+    <div class="container">
+      <h2 class="h1 text-primary text-center">append</h2>
+      <button class="append btn btn-primary" type="button">append</button>
+      <p class="pappend"></p>
+    </div>
+    <br><hr>
+    <!-- prepend -->
+    <div class="container">
+      <h2 class="h1 text-primary text-center">prepend</h2>
+      <button class="prepend btn btn-primary" type="button">prepend</button>
+      <ul class="pprepend">
+        <li>preprend</li>
+        <li>preprend</li>
+        <li>preprend</li>
+      </ul>
+    </div>
+    <br><hr>
+    <!-- before after -->
+    <div class="container">
+      <h2 class="h1 text-primary text-center">before after </h2>
+      <button class="before  btn btn-primary" type="button">before</button>
+      <button class="after   btn btn-primary" type="button">after</button>
+        <div class="img"></div>
+    </div>
+    <br><hr>
 
 
 
