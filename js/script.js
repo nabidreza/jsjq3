@@ -53,6 +53,7 @@ $(document).ready(function(){
 
 
 
+
 	//practice from api documantation
 	//add ( + clone() + apend to() )
 	$('li').add('p').css("background-color","skyblue");
@@ -66,4 +67,30 @@ $(document).ready(function(){
 	//after
 	$('.p2').after("<b>greeaaaattt!!!</b>");
 	$('.p2').after(document.createTextNode("hey"));
+	//stop
+	$('.slide').click(function(){
+		$('.slide-').slideDown(5000);
+	});
+	$('.stop').click(function(){
+		$('.slide-').stop();
+	});
+	//chaining
+	$('.chaining').click(function(){
+		$('.slide-chain').slideUp(1000).slideDown(1000).hide(1000);
+	});
+	//append
+	$('.append').click(function(){
+		$('.pappend').append("<h4>append</h4>");
+	});
+	//prepend
+	$('.prepend').click(function(){
+		$('.pprepend').prepend("<li>prepend</li>");
+	});
+	//before after 
+	$('.before').click(function(){
+		$('.img').before("<h4>before</h4>");
+	});
+	$('.after').click(function(){
+		$('.img').after("<h4>after</h4>");
+	});
 });
